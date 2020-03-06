@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+}
+
+.dice__container {
+  display: flex;
+  justify-content: center;
+}
+
+.Dice {
+  color: teal;
+  margin: 2rem;
+}
+
+.wobble {
+  animation: wobble 1000ms ease-in-out both;
+}
+
+@keyframes wobble {
+  0% { transform: translateX(0%); }
+  15% { transform: translateX(-25%) rotate(-5deg); }
+  30% { transform: translateX(20%) rotate(3deg); }
+  45% { transform: translateX(-15%) rotate(-3deg); }
+  60% { transform: translateX(10%) rotate(2deg); }
+  75% { transform: translateX(-5%) rotate(-1deg); }
+  100% { transform: translateX(0%); }
+}
+
+.Button {
+  outline: none;
+  font-size: 1rem;
+  border: 2px solid lightcoral;
+  color: lightcoral;
+  border-radius: 4px;
+  background-color: white;
+  padding: .5rem 1rem;
+  cursor: pointer;
+}
+
+.Button:hover {
+  background-color: lightcoral;
+  color: white;
+}
+
+.Button-off, .Button-off:hover  {
+  background-color: black;
+  border: 2px solid black;
+  cursor: auto;
+  color: white;
+}
